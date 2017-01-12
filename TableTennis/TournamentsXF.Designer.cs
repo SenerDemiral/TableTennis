@@ -40,6 +40,7 @@
 			this.eventDistirbutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.resultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.antetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.dataSet = new TableTennis.DataSet();
 			this.ttBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.ttTableAdapter = new TableTennis.DataSetTableAdapters.TTTableAdapter();
@@ -54,7 +55,6 @@
 			this.colSOD = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colEOD = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.ccTableAdapter = new TableTennis.DataSetTableAdapters.CCTableAdapter();
-			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.contextMenuStrip.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ttBindingSource)).BeginInit();
@@ -77,7 +77,7 @@
             this.antetToolStripMenuItem,
             this.helpToolStripMenuItem});
 			this.contextMenuStrip.Name = "contextMenuStrip";
-			this.contextMenuStrip.Size = new System.Drawing.Size(253, 224);
+			this.contextMenuStrip.Size = new System.Drawing.Size(253, 202);
 			// 
 			// participantsToolStripMenuItem
 			// 
@@ -127,7 +127,7 @@
             this.eventDistirbutionToolStripMenuItem,
             this.resultsToolStripMenuItem});
 			this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-			this.reportsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+			this.reportsToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
 			this.reportsToolStripMenuItem.Text = "Reports";
 			// 
 			// eventDistirbutionToolStripMenuItem
@@ -147,9 +147,16 @@
 			// antetToolStripMenuItem
 			// 
 			this.antetToolStripMenuItem.Name = "antetToolStripMenuItem";
-			this.antetToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+			this.antetToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
 			this.antetToolStripMenuItem.Text = "Antet";
 			this.antetToolStripMenuItem.Click += new System.EventHandler(this.antetToolStripMenuItem_Click);
+			// 
+			// helpToolStripMenuItem
+			// 
+			this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+			this.helpToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
+			this.helpToolStripMenuItem.Text = "Help";
+			this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
 			// 
 			// dataSet
 			// 
@@ -196,6 +203,7 @@
             this.colEOD});
 			this.ttGridView.GridControl = this.ttGridControl;
 			this.ttGridView.Name = "ttGridView";
+			this.ttGridView.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseDownFocused;
 			this.ttGridView.InitNewRow += new DevExpress.XtraGrid.Views.Grid.InitNewRowEventHandler(this.ttGridView_InitNewRow);
 			this.ttGridView.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.ttGridView_FocusedRowChanged);
 			this.ttGridView.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ttGridView_KeyUp);
@@ -283,13 +291,6 @@
 			// ccTableAdapter
 			// 
 			this.ccTableAdapter.ClearBeforeFill = true;
-			// 
-			// helpToolStripMenuItem
-			// 
-			this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-			this.helpToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-			this.helpToolStripMenuItem.Text = "Help";
-			this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
 			// 
 			// TournamentsXF
 			// 

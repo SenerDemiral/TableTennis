@@ -30,8 +30,9 @@ namespace TableTennis
 
         private void AntetXF_Load(object sender, EventArgs e)
         {
-            this.antetTableAdapter.FillByTT(this.dataSet.ANTET, ttID);
-
+            var res = this.antetTableAdapter.FillByTT(this.dataSet.ANTET, ttID);
+			if(res == 0)
+				dataSet.ANTET.AddANTETRow(ttID, "", "");
         }
 
         private void AntetXF_FormClosing(object sender, FormClosingEventArgs e)
@@ -39,7 +40,7 @@ namespace TableTennis
             this.Validate();
             this.antetBindingSource.EndEdit();
 
-            if (dataSet.HasChanges())
+			if (dataSet.HasChanges())
             {
                 DialogResult dr = MessageBox.Show("Do you want to Save?", "Confirm Save", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)

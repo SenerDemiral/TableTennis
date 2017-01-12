@@ -158,6 +158,7 @@
 			this.etGridView.GridControl = this.etGridControl;
 			this.etGridView.Name = "etGridView";
 			this.etGridView.OptionsBehavior.AutoExpandAllGroups = true;
+			this.etGridView.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseDownFocused;
 			this.etGridView.OptionsView.ColumnAutoWidth = false;
 			this.etGridView.InitNewRow += new DevExpress.XtraGrid.Views.Grid.InitNewRowEventHandler(this.etGridView_InitNewRow);
 			this.etGridView.RowDeleted += new DevExpress.Data.RowDeletedEventHandler(this.etGridView_RowDeleted);
