@@ -227,5 +227,12 @@ namespace TableTennis
 			frm.MdiParent = Program.MF;
 			frm.Show();
 		}
+
+		private void denemeToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			PrntChldXF frm = new PrntChldXF();
+			frm.MdiParent = Program.MF;
+			frm.Show();
+		}
 	}
 }

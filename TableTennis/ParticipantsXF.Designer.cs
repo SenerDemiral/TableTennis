@@ -192,6 +192,7 @@
             new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "JND", null, "Joined: {0}")});
 			this.ptGridView.Name = "ptGridView";
 			this.ptGridView.OptionsBehavior.AllowFixedGroups = DevExpress.Utils.DefaultBoolean.True;
+			this.ptGridView.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseDownFocused;
 			this.ptGridView.OptionsBehavior.SummariesIgnoreNullValues = true;
 			this.ptGridView.OptionsPrint.PrintHeader = false;
 			this.ptGridView.OptionsView.AllowCellMerge = true;

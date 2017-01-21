@@ -55,6 +55,7 @@
 			this.colSOD = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colEOD = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.ccTableAdapter = new TableTennis.DataSetTableAdapters.CCTableAdapter();
+			this.denemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.contextMenuStrip.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ttBindingSource)).BeginInit();
@@ -75,9 +76,10 @@
             this.globalTemplatesToolStripMenuItem,
             this.reportsToolStripMenuItem,
             this.antetToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.helpToolStripMenuItem,
+            this.denemeToolStripMenuItem});
 			this.contextMenuStrip.Name = "contextMenuStrip";
-			this.contextMenuStrip.Size = new System.Drawing.Size(253, 202);
+			this.contextMenuStrip.Size = new System.Drawing.Size(253, 246);
 			// 
 			// participantsToolStripMenuItem
 			// 
@@ -292,6 +294,13 @@
 			// 
 			this.ccTableAdapter.ClearBeforeFill = true;
 			// 
+			// denemeToolStripMenuItem
+			// 
+			this.denemeToolStripMenuItem.Name = "denemeToolStripMenuItem";
+			this.denemeToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
+			this.denemeToolStripMenuItem.Text = "Deneme";
+			this.denemeToolStripMenuItem.Click += new System.EventHandler(this.denemeToolStripMenuItem_Click);
+			// 
 			// TournamentsXF
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,5 +349,6 @@
         private System.Windows.Forms.ToolStripMenuItem antetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resultsToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem denemeToolStripMenuItem;
 	}
 }
